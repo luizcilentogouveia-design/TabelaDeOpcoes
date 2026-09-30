@@ -122,3 +122,19 @@ button:active {
     line-height: 1.6;
     word-break: break-word;
 }
+
+/* Estilo para o aviso de prêmio na paleta do Flamengo */
+.aviso {
+    text-align: center;
+    color: #ffffff; /* Texto em branco */
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -15px; /* Aproxima um pouco do título */
+    margin-bottom: 25px;
+    background-color: #C52613; /* Fundo Vermelho Flamengo */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ffffff; /* Borda branca sutil */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
