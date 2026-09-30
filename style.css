@@ -1,0 +1,124 @@
+/* Paleta de Cores do Flamengo: Preto, Vermelho e Branco */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Fundo escuro elegante */
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #1e1e1e; /* Caixa cinza escuro/preto fosco */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(227, 27, 35, 0.2); /* Sombra avermelhada suave */
+    width: 100%;
+    max-width: 500px;
+    border-top: 5px solid #C52613; /* Detalhe em vermelho no topo */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #C52613;
+    padding-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 15px;
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2c2c2c;
+    border: 1px solid #444444;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #ffffff;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus {
+    border-color: #C52613;
+    outline: none;
+}
+
+.opcoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+    background: #252525;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #333333;
+}
+
+label {
+    font-size: 15px;
+    color: #e0e0e0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Customizando o visual dos inputs de rádio para combinar */
+input[type="radio"] {
+    accent-color: #C52613; /* Deixa o radio button vermelho */
+    transform: scale(1.1);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #c5141b; /* Vermelho Flamengo */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background-color: #c5141b; /* Vermelho mais escuro no hover */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.lista-respostas {
+    background: #151515;
+    padding: 15px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    min-height: 60px;
+    font-family: 'Courier New', Courier, monospace; /* Visual de painel técnico/placar */
+    font-size: 14px;
+    color: #4CAF50; /* Verde destaque para os dados, combinando com o fundo escuro */
+    line-height: 1.6;
+    word-break: break-word;
+}

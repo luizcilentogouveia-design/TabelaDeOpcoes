@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolão - Diagnósticos da Marcella</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1> Diagnósticos da Marcella</h1>
+        
+        <!-- Formulário para cadastrar participante e suas escolhas -->
+        <div class="form-bolao">
+            <input type="text" id="nomeJogador" placeholder="Nome do Participante">
+            
+            <h3>Selecione os diagnósticos (pode marcar mais de um):</h3>
+            <div class="opcoes-container">
+                <!-- 20 Principais Diagnósticos da Avaliação Neuropsicológica -->
+                <label><input type="checkbox" name="escolha" value="TDAH (Desatento)"> TDAH (Desatento)</label>
+                <label><input type="checkbox" name="escolha" value="TDAH (Hiperativo/Impulsivo)"> TDAH (Hiperativo/Impulsivo)</label>
+                <label><input type="checkbox" name="escolha" value="TDAH (Combinado)"> TDAH (Combinado)</label>
+                <label><input type="checkbox" name="escolha" value="TEA (Nível 1)"> TEA (Nível 1)</label>
+                <label><input type="checkbox" name="escolha" value="TEA (Nível 2)"> TEA (Nível 2)</label>
+                <label><input type="checkbox" name="escolha" value="Dislexia"> Dislexia</label>
+                <label><input type="checkbox" name="escolha" value="Discalculia"> Discalculia</label>
+                <label><input type="checkbox" name="escolha" value="Disgrafia"> Disgrafia</label>
+                <label><input type="checkbox" name="escolha" value="Transtorno do Desenvolvimento da Coordenacao (TDC)"> TDC (Dispraxia)</label>
+                <label><input type="checkbox" name="escolha" value="Deficiencia Intelectual Leve"> Deficiência Intelectual Leve</label>
+                <label><input type="checkbox" name="escolha" value="Transtorno Opositor-Desafiador (TOD)"> TOD</label>
+                <label><input type="checkbox" name="escolha" value="Transtorno de Conduta"> Transtorno de Conduta</label>
+                <label><input type="checkbox" name="escolha" value="Transtorno Depressivo"> Transtorno Depressivo</label>
+                <label><input type="checkbox" name="escolha" value="Transtorno de Ansiedade Generalizada"> Ansiedade Generalizada</label>
+                <label><input type="checkbox" name="escolha" value="Transtorno Obsessivo-Compulsivo (TOC)"> TOC</label>
+                <label><input type="checkbox" name="escolha" value="Transtorno Bipolar"> Transtorno Bipolar</label>
+                <label><input type="checkbox" name="escolha" value="Demencia do Tipo Alzheimer"> Demência de Alzheimer</label>
+                <label><input type="checkbox" name="escolha" value="Demencia Vascular"> Demência Vascular</label>
+                <label><input type="checkbox" name="escolha" value="Comprometimento Cognitivo Leve (CCL)"> CCL</label>
+                <label><input type="checkbox" name="escolha" value="Sem Alteracoes Clinicas Significativas"> Sem Alterações Clínicas</label>
+            </div>
+
+            <button id="btnSalvar">Salvar Resposta</button>
+        </div>
+
+        <!-- Área onde exibe a lista unificada -->
+        <div class="resultado-container">
+            <h2>Respostas Registradas</h2>
+            <div id="listaBolao" class="lista-respostas">
+                <!-- Os dados salvos na nuvem aparecerão aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
