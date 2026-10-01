@@ -80,13 +80,13 @@ onValue(dbRef, (snapshot) => {
         return;
     }
 
-    // Percorre os dados do Firebase e monta no formato exigido: jogador + respostas;
+    // Percorre os dados do Firebase e monta cada jogador em uma linha separada
     let arrayRespostas = [];
     for (let id in dados) {
         let item = dados[id];
         arrayRespostas.push(`${item.jogador} + [${item.resposta}]`);
     }
 
-    // Exibe no formato exigido: jogador+[respostas]; jogador+[respostas]; ...
-    listaBolaoDiv.innerText = arrayRespostas.join("; ") + ";";
+    // Junta cada item usando uma quebra de linha (<br>) em vez de ponto e vírgula na mesma linha
+    listaBolaoDiv.innerHTML = arrayRespostas.join("<br><br>");
 });
